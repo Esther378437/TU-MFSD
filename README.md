@@ -184,14 +184,15 @@ If you use the resource files in a publication, presentation, or other research 
 }.
 ```
 The citation will be updated when the DOI and persistent identifier have been confirmed.
-
+<!--
 ## Contact
 
 For questions concerning the research resources, documentation, or access conditions, contact:
 
 - **Dataset contact:** Esther Ramdinmawii
 - **Contact email:** esther.rdmchhakchhuak@gmail.com
-<!-- - **Institution:** [Insert institution.]-->
+- **Institution:** [Insert institution.]
+-->
 
 ## Acknowledgements
 
