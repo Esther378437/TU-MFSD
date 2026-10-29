@@ -81,6 +81,20 @@ Two dataset configurations were used in the deep-learning experiments:
 
 The difference in sample counts reflects feature representation-specific data validity filtering. The validation set was used for model selection and training control, including early stopping. The test set was reserved for final evaluation. The grouping variable was song identity rather than singer identity. Therefore, the protocol supports song-independent evaluation but should not be interpreted as a singer-independent evaluation. The traditional machine-learning baselines used a separate 80:20 partition and five-fold cross-validation protocol. Details of that protocol should be consulted before directly comparing its results with those from the grouped deep-learning experiments.
 
+
+## Split Assignments Format
+
+The file `split_assignments.csv` provides the training, validation, and test partition assignments used in the Acoustic 1D-CNN experiment branch. Each row identifies an audio segment, its source song, its class label, and its assigned partition.  The partitioning is song-independent, meaning that segments belonging to the same source song are assigned to the same partition. The `split_assignments_2d.csv` provides the partition assignments for the 2D-CNN branch, the fusion classifier, and the openL3 classifier.
+
+| Field | Description |
+|---|---|
+| `sample_id` | Identifier for an audio segment. |
+| `song_id` | Identifier for the original song from which the segment was extracted. |
+| `label` | Numerical class label used in the experiments. |
+| `split` | Assigned partition: `train`, `validation`, or `test`. |
+
+
+
 ## Data Augmentation
 
 Three augmentation techniques were investigated:
