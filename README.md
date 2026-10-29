@@ -84,7 +84,7 @@ The difference in sample counts reflects feature representation-specific data va
 
 ## Split Assignments Format
 
-The file `split_assignments.csv` provides the training, validation, and test partition assignments used in the Acoustic 1D-CNN experiment branch. Each row identifies an audio segment, its source song, its class label, and its assigned partition.  The partitioning is song-independent, meaning that segments belonging to the same source song are assigned to the same partition. The `split_assignments_2d.csv` provides the partition assignments for the 2D-CNN branch, the fusion classifier, and the openL3 classifier.
+The file `split_assignments.csv` provides the training, validation, and test partition assignments used in the Acoustic 1D-CNN experiment branch. Each row identifies an audio segment, its source song, its class label, and its assigned partition.  The partitioning is song-independent, meaning that segments belonging to the same source song are assigned to the same partition. The `split_assignments_2dcnnMfcc_openl3.csv` provides the partition assignments for the 2D-CNN branch, the fusion classifier, and the openL3 classifier.
 
 | Field | Description |
 |---|---|
