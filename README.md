@@ -113,7 +113,7 @@ The experiments investigate the following representations:
 
 The acoustic feature set contains 29 numerical descriptors, including fundamental-frequency statistics, zero-crossing rate, energy, excitation-related measures, cepstral peak prominence measures, MFCC coefficients, and formant-related descriptors.
 
-The exact list of released features, their definitions, units, and extraction settings should be provided in `features/feature_dictionary.csv`.
+The exact list of released features, their definitions, and units are provided in `feature_dictionary.csv`.
 
 ### MFCC Representation
 
