@@ -12,4 +12,4 @@ CPPNOvoiceDet,"Likely CPP calculated without voice detection, potentially includ
 CPPF0_ Voice Det,Possibly the F0 estimated from the cepstral peak during voice-detected segments. Cepstral F0 is obtained from the inverse of the peak’s quefrency. ,Cepstral pitch feature,Hz 
 Mfcc_1,"First reported mel-frequency cepstral coefficient. MFCCs summarize the shape of the log-mel spectrum.In this experiment, it corresponds to coefficient c0.",Spectral / cepstral feature,No fixed physical unit.  conventionally treated as dimensionless
 Mfcc_2 to MFCC_13, These are the coefficient components describing the spectral envelope. ,Spectral / cepstral feature,Conventionally dimensionless
-F1 to F5,Centre frequency of the first formant - the lowest of the reported vocal-tract resonance frequencies. ,Spectral / formant feature,Hz
+F1 to F5,Central frequency of vocal tract resonances. ,Spectral / formant feature,Hz
