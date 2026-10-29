@@ -1,0 +1,15 @@
+Feature,Description,Feature type,Unit
+F0_min,Minimum valid fundamental frequency detected in the recording. F0 represents the rate of vocal-fold vibration during voiced speech.,Pitch / prosodic statistic,Hz
+F0_max,Maximum valid fundamental frequency detected in the recording.,Pitch / prosodic statistic,Hz
+F0_mean,Arithmetic average of valid F0 measurements across the analyzed frames.,Pitch / prosodic statistic,Hz
+F0_stdev,Standard deviation of F0 measurements which describes how much pitch varies around its mean., Pitch variability statistic,Hz
+F0_median,Middle value of the valid F0 measurements after sorting and  less sensitive to extreme values than the mean.,Pitch / prosodic statistic,Hz
+F0_range,Difference between maximum and minimum F0: F0max – F0min,Pitch variability statistic,Hz
+ZCR,"Zero-crossing rate: how frequently the waveform changes sign. In libraries such as librosa, it is expressed as the fraction of zero crossings within a frame.",Time-domain feature,Dimensionless fraction crossings if explicitly time-normalized
+Energy,"Signal strength calculated from squared sample amplitudes, commonly as a sum or mean over a frame. Check whether your code instead calculates RMS amplitude or logarithmic energy.",Time-domain / amplitude feature,Squared-amplitude units for energy.  Amplitude units for RMS.  dB for a defined logarithmic measure.
+CPPvoiceDet,"Likely cepstral peak prominence calculated with voice detection, restricting analysis to selected voice-active segments. CPP measures the height of the cepstral peak above its background trend.",Cepstral / voice-quality feature,dB
+CPPNOvoiceDet,"Likely CPP calculated without voice detection, potentially including unvoiced or silent frames in the analysis. Its value therefore depends on the analyzed speech segments and calculation settings.",Cepstral / voice-quality feature,dB
+CPPF0_ Voice Det,Possibly the F0 estimated from the cepstral peak during voice-detected segments. Cepstral F0 is obtained from the inverse of the peak’s quefrency. ,Cepstral pitch feature,Hz 
+Mfcc_1,"First reported mel-frequency cepstral coefficient. MFCCs summarize the shape of the log-mel spectrum.In this experiment, it corresponds to coefficient c0.",Spectral / cepstral feature,No fixed physical unit.  conventionally treated as dimensionless
+Mfcc_2 to MFCC_13, These are the coefficient components describing the spectral envelope. ,Spectral / cepstral feature,Conventionally dimensionless
+F1 to F5,Centre frequency of the first formant - the lowest of the reported vocal-tract resonance frequencies. ,Spectral / formant feature,Hz
