@@ -54,7 +54,7 @@ The repository does not grant permission to access or redistribute source record
 
 ## Metadata Format
 
-The metadata schema is shown below:
+The metadata of TU-MFSD can be accessed in `metadata/metadata.csv`. The schema is shown below:
 
 | Field                    | Description                                                                               |
 | ------------------------ | ----------------------------------------------------------------------------------------- |
@@ -84,7 +84,7 @@ The difference in sample counts reflects feature representation-specific data va
 
 ## Split Assignments Format
 
-The file `split_assignments.csv` provides the training, validation, and test partition assignments used in the Acoustic 1D-CNN experiment branch. Each row identifies an audio segment, its source song, its class label, and its assigned partition.  The partitioning is song-independent, meaning that segments belonging to the same source song are assigned to the same partition. The `split_assignments_2dcnnMfcc_openl3.csv` provides the partition assignments for the 2D-CNN branch, the fusion classifier, and the openL3 classifier.
+The file `splits/split_assignments.csv` provides the training, validation, and test partition assignments used in the Acoustic 1D-CNN experiment branch. Each row identifies an audio segment, its source song, its class label, and its assigned partition.  The partitioning is song-independent, meaning that segments belonging to the same source song are assigned to the same partition. The `splits/split_assignments_2dcnnMfcc_openl3.csv` provides the partition assignments for the 2D-CNN branch, the fusion classifier, and the openL3 classifier.
 
 | Field | Description |
 |---|---|
@@ -103,7 +103,7 @@ Three augmentation techniques were investigated:
 - **Time stretching (TSA):** modification of playback duration without intentionally changing pitch.
 - **Frequency masking (FMA):** masking of frequency regions in time–frequency representations.
 
-Augmentation was applied only to training data. Validation and test samples remained unaugmented and unchanged across the corresponding baseline and augmentation experiments. Synthetic augmented samples are not independent original recordings.
+Augmentation was applied only to training data. Validation and test samples remained un-augmented and unchanged across the corresponding baseline and augmentation experiments. Synthetic augmented samples are not independent original recordings.
 
 ## Feature Representations
 
@@ -136,7 +136,7 @@ Classification performance is evaluated using multiple metrics, including:
 - Class-wise precision, recall, and F1-score.
 - Confusion matrices.
 
-Macro-averaged metrics are particularly relevant because the six song categories are not equally represented in the dataset.
+Macro-averaged metrics are particularly relevant because the six song categories are not equally represented in the dataset. The baseline metrics can be found in `results/baseline_metrics.csv` and `results/augmentation_metrics.csv`.
 
 
 ## Ethical, Copyright, and Cultural-Use Considerations
