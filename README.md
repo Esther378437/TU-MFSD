@@ -33,7 +33,7 @@ The principal data characteristics are:
 - **Classification approaches:** 1D-CNN, 2D-CNN, hybrid feature fusion, and OpenL3-based classification.
 - **Augmentation methods investigated:** Pitch shifting (PSA), time stretching (TSA), and frequency masking (FMA).
 
-The exact category names, class-label mapping, and any recording-level metadata are documented in `data/class_labels.csv` and `docs/DATA_DICTIONARY.md`.
+The exact category names, class-label mapping, and any recording-level metadata are documented in `data/class_labels.csv` and `data/DATA_DICTIONARY.md`.
 
 ## Available Data and Access Conditions
 
